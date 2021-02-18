@@ -13,17 +13,16 @@ import matplotlib.pyplot as plt
 # Parameters
 ##########################
 
-t_high = 10
-t_low = 0
+t_high = 25
+t_low = 15
 q_high = 5
 q_low = -5
 e_low = 0
 e_mid = 5
 e_high = 10
-E = 100
+E = 10000
 K = np.linspace(0, 5, num=11)
 number_Ks = len(K)
-
 
 ##########################    
 # Functions
@@ -186,7 +185,7 @@ for x in range(4):
 
 box = ax.get_position()
 ax.set_position([box.x0, box.y0, box.width, box.height])
-ax.yaxis.grid(which="major", color='lightgray', linewidth=1, marker='*',
+ax.yaxis.grid(which="major", color='lightgray', linewidth=1,
               rasterized=True, markeredgecolor='white')
 
 lgd = ax.legend(loc='best', title='', frameon=True, fancybox=True, 
