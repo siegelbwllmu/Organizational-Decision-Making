@@ -69,6 +69,8 @@ def choose_average(value_p, per_e_low, per_e_mid, per_e_high):
     return performance
 
 
+
+
 performance_matrix = np.zeros((number_Ks, 4))
 temp_matrix = np.zeros((E, 4))
 value_type_matrix = np.zeros((E, 2))
