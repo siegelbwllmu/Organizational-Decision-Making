@@ -80,7 +80,10 @@ def choose_voting(value_p, per_e_low, per_e_mid, per_e_high):
     return performance
 
 def choose_average(value_p, per_e_low, per_e_mid, per_e_high):
-    performance = 0
+    if (per_e_low + per_e_mid + per_e_high)/3 > 0:
+        performance = value_p
+    else:
+        performance = 0
     return performance
 
 
