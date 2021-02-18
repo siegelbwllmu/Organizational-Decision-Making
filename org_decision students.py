@@ -2,7 +2,7 @@
 """
 Created on Sat Jan 19 20:38:07 2019
 
-@author: Helge und GRUPPE AWESOME :)
+@author: Helge und GRUPPE AWESOME :))
 """
 
 import numpy as np
