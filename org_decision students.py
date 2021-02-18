@@ -57,8 +57,23 @@ def choose_individual(value_p, per_e_mid):
 
 def choose_delegate(value_p, per_e_low, per_e_mid, per_e_high, type_p,
                     e_low, e_mid, e_high):
-    performance = 0
+    if type_p > (e_high + e_low)/2:
+        if per_e_high > 0:
+            performance = value_p
+        else:
+            performance = 0
+    elif type_p < (e_high + e_low)/2:
+        if per_e_low > 0:
+            performance = value_p
+        else:
+            performance = 0
+    else:
+        if per_e_mid > 0:
+            performance = value_p
+        else:
+            performance = 0
     return performance
+
 
 def choose_voting(value_p, per_e_low, per_e_mid, per_e_high):
     performance = 0
