@@ -76,7 +76,17 @@ def choose_delegate(value_p, per_e_low, per_e_mid, per_e_high, type_p,
 
 
 def choose_voting(value_p, per_e_low, per_e_mid, per_e_high):
-    performance = 0
+    v = 0
+    if per_e_low > 0 :
+        v += 1
+    if per_e_mid > 0 :
+        v += 1
+    if per_e_high > 0 :
+        v += 1
+    if v > 1:
+        performance = value_p
+    else:
+        performance = 0
     return performance
 
 def choose_average(value_p, per_e_low, per_e_mid, per_e_high):
